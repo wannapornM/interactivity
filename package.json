@@ -1,0 +1,12 @@
+{
+  "name": "interactivity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  },
+  "scripts": {
+    "dev": "yarn parcel src/index.html"
+  }
+}
