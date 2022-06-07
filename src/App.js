@@ -1,3 +1,5 @@
+import Signup from "./components/Signup"
+
 export default function App() {
   function Toolbar(props) {
     const { onPlayMovie, onUploadImage } = props
@@ -20,8 +22,10 @@ export default function App() {
   }
 
   return (
-    <div onClick={() => alert("Final div!")}>
-      <Toolbar onPlayMovie={() => alert("Playing!")} onUploadImage={() => alert("Uploading!")} />
-    </div>
+    // <div onClick={() => alert("Final div!")}>
+    //   <Toolbar onPlayMovie={() => alert("Playing!")} onUploadImage={() => alert("Uploading!")} />
+    // </div>
+
+    <Signup />
   )
 }
