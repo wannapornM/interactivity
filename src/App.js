@@ -1,4 +1,5 @@
 import Signup from "./components/Signup"
+import Gallery from "./components/Gallery"
 
 export default function App() {
   function Toolbar(props) {
@@ -26,6 +27,7 @@ export default function App() {
     //   <Toolbar onPlayMovie={() => alert("Playing!")} onUploadImage={() => alert("Uploading!")} />
     // </div>
 
-    <Signup />
+    //<Signup />
+    <Gallery />
   )
 }
