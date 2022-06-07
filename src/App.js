@@ -3,7 +3,8 @@ export default function App() {
     const { onPlayMovie, onUploadImage } = props
 
     return (
-      <div className="p-4 bg-blue-100" onClick={() => alert("You clicked me!")}>
+      <div className="p-4 bg-blue-100" onClick={(e) => {alert("You clicked me!") 
+        e.stopPropagation()}}>
         <Button onClick={onPlayMovie}>Play Movie</Button>
         <Button onClick={onUploadImage}>Upload Image</Button>
       </div>
