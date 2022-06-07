@@ -1,6 +1,7 @@
 import Signup from "./components/Signup"
 import Gallery from "./components/Gallery"
 import Form from "./components/Form"
+import FeedbackForm from "./components/FeedbackForm"
 
 export default function App() {
   function Toolbar(props) {
@@ -24,12 +25,6 @@ export default function App() {
   }
 
   return (
-    // <div onClick={() => alert("Final div!")}>
-    //   <Toolbar onPlayMovie={() => alert("Playing!")} onUploadImage={() => alert("Uploading!")} />
-    // </div>
-
-    //<Signup />
-    //<Gallery />
-    <Form />
+    <FeedbackForm />
   )
 }
