@@ -1,5 +1,6 @@
 import Signup from "./components/Signup"
 import Gallery from "./components/Gallery"
+import Form from "./components/Form"
 
 export default function App() {
   function Toolbar(props) {
@@ -28,6 +29,7 @@ export default function App() {
     // </div>
 
     //<Signup />
-    <Gallery />
+    //<Gallery />
+    <Form />
   )
 }
