@@ -1,38 +1,61 @@
 import { useState } from "react";
 
 export default function Form() {
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
+  const [person, setPerson] = useState({
+    firstName: 'Wannaporn',
+    lastName: "Dangkum",
+    email: "bhr@gmail.com"
+  })
 
   function handleFirstNameChange(e) {
-    setFirstName(e.target.value)
+    setPerson({
+      ...person,
+      firstName: e.target.value
+    })
   }
 
   function handleLastNameChange(e) {
-    setLastName(e.target.value)
+    setPerson({
+      ...person,
+      lastName: e.target.value
+    })
   }
 
-  function handleReset() {
-    setFirstName('')
-    setLastName('')
+  function handleEmailChange() {
+    setPerson({
+      ...person,
+      email: e.target.value
+    })
   }
 
   return (
-    <form onSubmit={e => e.preventDefault()}>
-      <input
-        className="border"
-        placeholder="First name"
-        value={firstName}
-        onChange={handleFirstNameChange}
-      />
-      <input
-        className="border"
-        placeholder="Last name"
-        value={lastName}
-        onChange={handleLastNameChange}
-      />
-      <h1>Hi, {firstName} {lastName}</h1>
-      <button onClick={handleReset}>Reset</button>
-    </form>
+    <>
+      <label>
+        First name :
+        <input
+          className="border"
+          value={person.firstName}
+          onChange={handleFirstNameChange}
+          />
+      </label>
+
+      <label>
+        Last name :
+        <input
+          className="border"
+          value={person.lastName}
+          onChange={handleLastNameChange}
+        />
+      </label>
+
+      <label>
+        Email :
+        <input 
+          className="border"
+          value={person.email}
+          onChange={handleEmailChange}
+        />
+      </label>
+    </>
   );
 }

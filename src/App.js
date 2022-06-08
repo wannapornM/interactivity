@@ -28,6 +28,6 @@ export default function App() {
   }
 
   return (
-    <MovingDot />
+    <Form />
   )
 }
