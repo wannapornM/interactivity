@@ -1,4 +1,5 @@
 import Signup from "./components/Signup"
+import Counter from "./components/Counter"
 
 export default function App() {
   function Toolbar(props) {
@@ -22,10 +23,6 @@ export default function App() {
   }
 
   return (
-    // <div onClick={() => alert("Final div!")}>
-    //   <Toolbar onPlayMovie={() => alert("Playing!")} onUploadImage={() => alert("Uploading!")} />
-    // </div>
-
-    <Signup />
+    <Counter />
   )
 }
