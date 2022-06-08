@@ -4,6 +4,7 @@ import Form from "./components/Form"
 import FeedbackForm from "./components/FeedbackForm"
 import Counter from "./components/Counter"
 import RequestTracker from "./components/RequestTracker"
+import MovingDot from "./components/MovingDot"
 
 export default function App() {
   function Toolbar(props) {
@@ -27,6 +28,6 @@ export default function App() {
   }
 
   return (
-    <RequestTracker />
+    <MovingDot />
   )
 }
