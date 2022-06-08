@@ -3,6 +3,7 @@ import Gallery from "./components/Gallery"
 import Form from "./components/Form"
 import FeedbackForm from "./components/FeedbackForm"
 import Counter from "./components/Counter"
+import RequestTracker from "./components/RequestTracker"
 
 export default function App() {
   function Toolbar(props) {
@@ -26,6 +27,6 @@ export default function App() {
   }
 
   return (
-    <Counter />
+    <RequestTracker />
   )
 }
