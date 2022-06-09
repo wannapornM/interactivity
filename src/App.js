@@ -7,6 +7,7 @@ import RequestTracker from "./components/RequestTracker"
 import MovingDot from "./components/MovingDot"
 import List from "./components/List"
 import ShapeEditor from "./components/ShapeEditor"
+import CounterList from "./components/CounterList"
 
 export default function App() {
   function Toolbar(props) {
@@ -30,6 +31,6 @@ export default function App() {
   }
 
   return (
-    <ShapeEditor />
+    <CounterList />
   )
 }
