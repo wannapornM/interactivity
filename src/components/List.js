@@ -24,7 +24,6 @@ export default function List() {
         setName('')
         setArtists(nextArtists)
         console.log(nextId)
-
     }
     return (
         <>

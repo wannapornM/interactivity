@@ -8,6 +8,7 @@ import MovingDot from "./components/MovingDot"
 import List from "./components/List"
 import ShapeEditor from "./components/ShapeEditor"
 import CounterList from "./components/CounterList"
+import BucketList from "./components/BucketList"
 
 export default function App() {
   function Toolbar(props) {
@@ -31,6 +32,6 @@ export default function App() {
   }
 
   return (
-    <List />
+    <BucketList />
   )
 }
