@@ -31,6 +31,6 @@ export default function App() {
   }
 
   return (
-    <CounterList />
+    <List />
   )
 }
